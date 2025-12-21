@@ -4,6 +4,7 @@ import Footer from './Componentes/Footer'
 import Register from './Componentes/Register'
 import Login from './Componentes/Login'
 import Cart from './Componentes/Cart'
+import Pizza from './Componentes/Pizza'
 import './App.css'
 
 
@@ -17,12 +18,13 @@ const App = () =>  {
       <Navbar />
 
       <main className='container p-0'  >
-       {/*<Home /> */}
-       { /*<Register /> */}
-       {/*<Login /> */}
+       {/*<Home />*/ /*hito 4 */}
+       {<Pizza />}
+       {/*<Register /> {/* hito2 */}
+       {/*<Login /> */ /* hito2 */}
          
       </main>
-      <Cart />
+      {/*<Cart />*/ /* hito3 */}
       <Footer />
     </div>
   )
