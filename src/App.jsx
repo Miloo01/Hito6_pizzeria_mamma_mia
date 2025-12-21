@@ -19,7 +19,7 @@ const App = () =>  {
 
       <main className='container p-0'  >
        {/*<Home />  /*hito 4 */}
-       {<Pizza/>  /* hito 4 */}
+       <Pizza/>  {/* hito 4 */}
        {/*<Register /> {/* hito2 */}
        {/*<Login /> */ /* hito2 */}
          
