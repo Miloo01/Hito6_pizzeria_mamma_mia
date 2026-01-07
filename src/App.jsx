@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './Componentes/Navbar'
-import Home from './Componentes/Home'
+import Home from './Pages/Home'
 import Footer from './Componentes/Footer'
-import Register from './Componentes/Register'
-import Login from './Componentes/Login'
-import Cart from './Componentes/Cart'
-import Pizza from './Componentes/Pizza'
+import Register from './Pages/Register'
+import Login from './Pages/Login'
+import Cart from './Pages/Cart'
+import Pizza from './Pages/Pizza'
 import './App.css'
 
 
@@ -24,11 +24,15 @@ const App = () =>  {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/pizza/p001' element={<Pizza />} />
+        <Route path='profile' element={<Profile />} /> {/* crear componente Profile */}
+        <Route path='/404' element={<NotFound />} /> {/* crear componente NotFound */}
+        <Route path='*' element={<NotFound />} /> {/* crear componente NotFound */}
       </Routes>
 
       <main className='container p-0'  >
        {/*<Home />  /*hito 4 */}
-       <Pizza/>  {/* hito 4 */}
+       {/*<Pizza/>  {/* hito 4 */}
        {/*<Register /> {/* hito2 */}
        {/*<Login /> */ /* hito2 */}
          
