@@ -50,7 +50,11 @@ const Cart = () => {
             ))}
           </ul>
           <h5 className="mt-4 mb-4">Total: $ {formatNumber(getTotal())}</h5>
-          <button className="btn btn-primary mb-4 px-5">Pagar</button>
+          <button className="btn btn-primary mb-4 px-5"
+            style={{ backgroundColor: "#1A1A1A", border: "none", padding: "10px 25px", borderRadius: "50px", fontWeight: "bold", transition: "0.3s" }}
+            onMouseOver={(e) => e.target.style.backgroundColor = "#FF8800"}
+            onMouseOut={(e) => e.target.style.backgroundColor = "#1A1A1A"}>Pagar
+          </button>
         </>
       )}
     </div>
